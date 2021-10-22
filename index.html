@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Frontend Mentor | Interactive pricing component</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-	<link rel="stylesheet" href="style/style.css" />
-	<title>Frontend Mentor | Interactive pricing component</title>
-</head>
-
-<body>
-	<main>
-		<div class="head-container">
-			<img class="bg" src="images/bg-pattern.svg" alt="quadrado andulado" />
+	<body>
+		<main>
+			<div class="head-container">
+				<img class="bg" src="images/bg-pattern.svg" alt="quadrado andulado" />
 				<img class="circle" src="images/pattern-circles.svg" alt="circulos" />
-        <h2>Simple, traffic-based pricing</h2>
-        <p>Sign-up for our 30-day trial. No credit card required.</p>
-        <div class="body-container">
-          <div class="body-container-inside">
-              <div class="child1-container">
-                <spa id="pages">0</spa><spa>Pageviews</spa>
+				<h2>Simple, traffic-based pricing</h2>
+				<p>Sign-up for our 30-day trial. No credit card required.</p>
+				<div class="body-container">
+					<div class="body-container-inside">
+						<div class="child1-container">
+							<spa id="pages">0</spa><spa>Pageviews</spa>
+						</div>
+						<!-- child1-container -->
+						<div class="child2-container">
+							<spa id="pay-month">0,00</spa><spa>/month</spa>
+						</div>
+						<!-- child2-container -->
+					</div>
+					<!-- body-container-inside -->
+					<div>
+						<div class="bar-value">
+							<input class="range" type="range" min="0" max="100" value="50" />
+							<div class="slider-thumb">
+                <div class="quadrado"></div>
               </div>
-              <!-- child1-container -->
-             <div class="child2-container">
-               <spa id="pay-month">0,00</spa><spa>/month</spa>
-             </div>
-             <!-- child2-container -->
-          </div>
-          <!-- body-container-inside -->
-          <div>
-          <div class="bar-value">
-           <input id="range" type="range" min="0" max="100" step="6.25">
-          </div>
-          <!-- bar-value -->
-          </div>
-        </div>
-        <!-- body-container -->
+              <!-- slider-thumb -->
+              <div class="progress"></div>
+							</div>
+							<!-- bar-value -->
+					</div>
+				</div>
+				<!-- body-container -->
 			</div>
 			<!-- head-container -->
 		</main>
 
-		<script src="style/style.css"></script>
+		<script src="script/script.js"></script>
 	</body>
 </html>
 
