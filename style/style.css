@@ -91,9 +91,19 @@ main {
   padding-left: 10%;
 
 }
-.bar-value,.bar-value>input{
-  width: 80%;
+.bar-value{
+  max-width: 90%;
   margin: 10% auto 0 auto;
-  display: block;
+  display: flex;
+  position: relative;
 }
+.bar-value #range{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0,5%;
+  outline: none;
+  background: ;
+  border-radius:3px; 
+  box-shadow: 3px 3px 6px #000000, inset 1px 1px 1px #909090;
 
+}
