@@ -73,6 +73,7 @@ main {
   padding: 0 5px;
 }
 #pay-month,#pay-month::before{
+  font-size: 22px;
   font-weight: 800;
   content: "$";
 }
