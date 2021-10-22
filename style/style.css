@@ -18,6 +18,7 @@ main {
 	height: 100%;
 	background-color: rgb(53, 38, 109);
 }
+/* ESTAMOS EDITANDO O CABEÇALHO */
 .head-container {
 	width: 100%;
 	height: 100%;
@@ -55,13 +56,43 @@ main {
   font-weight: 600;
   font-size: 15px;
 }
+/* TERMINOU DE EDITAR O CABEÇALHO */
+
+/* COMECEI A EDITAR O CORPO */
 .body-container {
 	max-width: 70vw;
 	width: 500px;
 	height: 50%;
 	position: absolute;
 	top: 30%;
-	background-color: white;
+	background-color: rgb(231, 230, 230);
 	box-shadow: 3px -2px 2px rgba(0, 0, 0, 0.699);
 	border-radius: 3px;
 }
+#pages,#pay-month{
+  padding: 0 5px;
+}
+#pay-month,#pay-month::before{
+  font-weight: 800;
+  content: "$";
+}
+.body-container-inside{
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.child1-container,.child2-container{
+  width: 50%;
+  padding-top: 10%;
+  padding-left: 10%;
+
+}
+.bar-value,.bar-value>input{
+  width: 80%;
+  margin: 10% auto 0 auto;
+  display: block;
+}
+
