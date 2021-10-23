@@ -23,7 +23,7 @@
 				<div class="body-container">
 					<div class="body-container-inside">
 						<div class="child1-container">
-							<spa id="pages">0</spa><spa>Pageviews</spa>
+							<spa id="pages">0k</spa><spa>Pageviews</spa>
 						</div>
 						<!-- child1-container -->
 						<div class="child2-container">
@@ -33,15 +33,10 @@
 					</div>
 					<!-- body-container-inside -->
 					<div>
-						<div class="bar-value">
-							<input class="range" type="range" min="0" max="100" value="50" />
-							<div class="slider-thumb">
-                <div class="quadrado"></div>
-              </div>
-              <!-- slider-thumb -->
-              <div class="progress"></div>
+						<div class="slideContainer">
+							<input class="slider" id="myRange" type="range" min="0.00" max="100.00" value="0.00" oninput="writeSlider()"/>
 							</div>
-							<!-- bar-value -->
+							<!-- slideContainer -->
 					</div>
 				</div>
 				<!-- body-container -->

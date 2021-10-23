@@ -16,7 +16,7 @@ main {
 	max-height: 100vh;
 	width: 100%;
 	height: 100%;
-	background-color: rgb(53, 38, 109);
+	background-color: rgb(44, 31, 92);
 }
 /* ESTAMOS EDITANDO O CABEÇALHO */
 .head-container {
@@ -93,100 +93,49 @@ main {
 	padding-left: 10%;
 }
 /* EDITANDO O RANGE */
-.bar-value {
-	max-width: 90%;
+.slideContainer {
+	width: 90%;
 	margin: 10% auto 0 auto;
 	display: flex;
 	position: relative;
 }
-.bar-value .range {
+.slider {
+	/* vai controlar tudo dentro da range */
 	-webkit-appearance: none;
 	width: 100%;
-	height: 0.6em;
+	height: 15px;
+	background: linear-gradient(
+		90deg,
+		rgb(183, 1, 255, 0.801) 60%,
+		rgba(79, 0, 143, 0.801) 60%
+	);
 	outline: none;
-	border-radius: 3px;
-	background: #1f1f1f;
-	box-shadow: 3px 3px 6px #000, inset 1px 1px 1px #909090;
+	opacity: 0.7;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.5s;
+	box-shadow: 0px 0.5px 5px 3px purple;
+	border-radius: 10px;
 }
-/* PARA EDITAR O PONTEIRO DO RANGE*/
-.bar-value .range::-webkit-slider-thumb {
-	/* -webkit-appearance: none; */
-	width: 1.7em;
-	height: 1.7em;
-	cursor: pointer;
-	z-index: 3;
-	position: relative;
-	
+.slider:hover {
+	opacity: 1;
 }
-/* aqui é o ponteiro */
-.bar-value .slider-thumb {
-	position: absolute;
-	width: 1.7em;
-	height: 1.7em;
-	background-color: #090909;
+/* SETANDO O PONTEIRO */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 40px;
+	height: 40px;
+	background-color: #8b298f;
+	box-shadow: 0 0.5px 10px 7px purple;
 	border-radius: 50%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 2;
-	box-shadow: inset 0px 1px 2px #909090;
+	cursor: pointer;
 }
-/* ESPAÇO DENTRO DO PONTEIRO */
-.slider-thumb::before {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 0.7em;
-	height: 0.7em;
-	background: #1d1d1d;
-	border-radius: inherit;
-	transition: 0.3s;
+/* para rodar no mozila */
+.slider::-moz-range-thumb{
+	width: 40px;
+	height: 40px;
+	background-color: #8b298f;
+	border-radius: 50%;
+	cursor: pointer;
 }
-.bar-value:hover .slider-thumb::before{
-	background: #4ff7db;
-}
-/* QUADRADO */
-.bar-value .quadrado{
-	position: absolute;
-	width: 2.8em;
-	height: 2em;
-	top: -2em;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: #090909;
-	text-align: center;
-	line-height: 35px;
-	color: white;
-	border-radius: 3px;
-	box-shadow: 0px 3px 10px #1f1f1f, inset 0px 1px 2px #909090;
-}
-.bar-value .quadrado::before{
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-top: 10px solid #090909;
-	bottom: -0.4em;
-	left: 50%;
-	transform: translateX(-50%);
-}
-.bar-value .progress{
-	position: absolute;
-	width: 50%;
-	height: 0.4em;
-	border-radius: 3px;
-	background: linear-gradient(90deg, #335bf4 0%, #2ae9c9 100%);
-	top: 50%;
-	transform: translateY(-50%);
-	left: 0;
-	pointer-events: none;
-}
-@media screen and (max-width: 700px){
-	.neu-range-slider{
-		width: 100%;
-	}
-}
+/* TERMINEI DE EDITAR RANGE */
