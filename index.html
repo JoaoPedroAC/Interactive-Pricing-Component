@@ -32,12 +32,27 @@
 						<!-- child2-container -->
 					</div>
 					<!-- body-container-inside -->
-					<div>
-						<div class="slideContainer">
-							<input class="slider" id="myRange" type="range" min="0.00" max="100.00" value="0.00" oninput="writeSlider()"/>
-							</div>
-							<!-- slideContainer -->
+
+					<div class="slideContainer">
+						<input
+							class="slider"
+							id="myRange"
+							type="range"
+							min="0.00"
+							max="100.00"
+							value="0.00"
+							oninput="writeSlider()"
+						/>
 					</div>
+					<!-- slideContainer -->
+					<div class="billing">
+						<div>Monthly Billing</div>
+						<label>
+							<input type="checkbox" id="checkBox">
+							<span><i id="ball"></i></span>
+						</label>
+					</div>
+					<!-- Billing -->
 				</div>
 				<!-- body-container -->
 			</div>
@@ -54,7 +69,6 @@
   
   $ 
 
-  Monthly Billing
   Yearly Billing 25% discount
 
   Unlimited websites
