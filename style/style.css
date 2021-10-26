@@ -102,6 +102,7 @@ main {
 }
 .slider {
 	/* vai controlar tudo dentro da range */
+	-ms-touch-action: manipulation;
 	-webkit-appearance: none;
 	width: 100%;
 	height: 7px;
@@ -113,7 +114,8 @@ main {
 	box-shadow: 0px 0.5px 5px 3px purple;
 	border-radius: 10px;
 }
-.slider:hover {
+.slider:hover{
+	-ms-touch-action: auto;
 	opacity: 1;
 }
 /* SETANDO O PONTEIRO */
