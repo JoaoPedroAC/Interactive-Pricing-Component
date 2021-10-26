@@ -7,7 +7,7 @@ function writeSlider() {
 	valor.innerHTML = parseFloat(slider.value).toFixed(2).replace('.', ',');
 	pages.innerHTML = `${parseInt(slider.value)}k`;
 }
-// vai alterar a cor de fundo do input range
+// vai alterar a cor de fundo do input range *** nao executa quando no telefone
 slider.addEventListener('mousemove', function () {
 	// aqui vai fazer um calculo de porcentagem, já que o mesmo é para isso
 	let porcent = Number(
@@ -28,8 +28,10 @@ box.addEventListener('click', function(){
 	if (this.checked === false) {
 		// console.log(this.checked)
 		ball.style.left =`4px`
+		ball.style.transition =`0.5s`
 	} else {
 		ball.style.left =`52%`
+		ball.style.transition =`0.5s`
 	}
 });
 
