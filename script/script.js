@@ -17,12 +17,14 @@ slider.addEventListener('input', function () {
 		90deg,
 		rgb(183, 1, 255, 0.801) ${porcent}%,
 		rgba(79, 0, 143, 0.801) ${porcent}%
-	)`;	
-	// if (this.value <= 0) {
+	)`;
+
+	/* VAI RETORNAR OPACO SE FOR MENOR OU IGUAL A ZERO OU COM MAIS COR SE FOR MAIOR QUE ZERO */
+	// if (this.value <= this.min) {
 	// 	slider.style.opacity = '0.7';
-	// 	slider.style.transition = '0.5s'		
-	// }else if(this.value > 0){
-	// 	slider.style.transition = '0.5s'		
+	// 	slider.style.transition = '0.5s';
+	// } else if (this.value > this.max) {
+	// 	slider.style.transition = '0.5s';
 	// 	slider.style.opacity = '1';
 	// }
 });
@@ -30,14 +32,25 @@ slider.addEventListener('input', function () {
 // ANIMAÇÃO DO INPUT CHECHBOX
 const box = document.getElementById('checkBox');
 const ball = document.getElementById('ball');
+const downPrice = document.getElementById('pomotion');
 
 box.addEventListener('click', function () {
 	if (this.checked === false) {
-		// console.log(this.checked)
 		ball.style.left = `4px`;
 		ball.style.transition = `0.5s`;
+		downPrice.style.display = 'none';
 	} else {
 		ball.style.left = `52%`;
 		ball.style.transition = `0.5s`;
+		downPrice.style.display = 'inherit';
 	}
 });
+
+const button = document.getElementById('press');
+
+button.addEventListener('click', function(){
+	button.style.borderBottom = '3px solid #45318f';
+	setTimeout(function(){
+	button.style.borderBottom = '7px solid #45318f';
+	},90)
+})

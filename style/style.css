@@ -100,22 +100,23 @@ main {
 	display: flex;
 	position: relative;
 }
+.slideContainer input {
+	position: relative;
+}
 .slider {
 	/* vai controlar tudo dentro da range */
-	-ms-touch-action: manipulation;
 	-webkit-appearance: none;
 	width: 100%;
 	height: 7px;
 	background: rgba(79, 0, 143, 0.801);
 	outline: none;
 	opacity: 0.7;
-	-webkit-transition: 0.2s;
+	-webkit-transition: 0.5s;
 	transition: opacity 0.5s;
 	box-shadow: 0px 0.5px 5px 3px purple;
 	border-radius: 10px;
 }
-.slider:hover{
-	-ms-touch-action: auto;
+.slider:hover {
 	opacity: 1;
 }
 /* SETANDO O PONTEIRO */
@@ -145,10 +146,9 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
-	margin: 7.6% 0;
+	margin: 5.7% 0 13px 0;
 	padding: 10px 5%;
-	background-color: lightgray; /* vou apagar depois*/
-	font: 15px normal normal;
+	font-size: 15px;
 }
 
 label {
@@ -220,7 +220,7 @@ label input:checked ~ span i::before {
 label span i::after {
 	position: absolute;
 	bottom: 3px;
-	left: 3.8px;
+	left: 3.5px;
 	content: '';
 	width: 10px;
 	height: 2px;
@@ -231,13 +231,72 @@ label span i::after {
 	-webkit-transition: 0.5s;
 }
 label input:checked ~ span i::after {
+	bottom: 1.8px;
+	left: 3.8px;
 	height: 4px;
 	border-radius: 0;
 	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 13px;
 	background: #792dcaa9;
 	box-shadow: 0 0 0 #792dcaa9;
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 }
-/*  */
+.pomotion {
+	display: none;
+	padding: 0 3px;
+	margin-left: 5px;
+	border: 2px solid rgba(0, 0, 139, 0.767);
+	border-radius: 10px;
+	background-color: rgba(12, 12, 136, 0.589);
+	color: rgb(206, 213, 219);
+	text-shadow: 2px 2px 2px black;
+}
+/* TERMINEI O CENTRO */
+.line {
+	width: 100%;
+	height: 2%;
+	background-color: lightgray;
+}
+/* COMECEI O FINAL */
+.final {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	font-size: 15px;
+	justify-content: center;
+}
+.details {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+}
+.checked img {
+	display: block;
+	padding-top: 12px;
+	margin-left: 5px;
+	border-radius: 15px;
+}
+.checked img:nth-child(1) {
+	padding-top: 8.8px;
+}
+.paragraph {
+	margin-left: 5px;
+}
+#buton {
+	width: 40%;
+}
+#buton button {
+	width: 100%;
+	height: 70%;
+	outline: none;
+	font-size: 15px;
+	color: rgb(231, 230, 230);
+	background-color: #2c1f5c;
+	border-radius: 30px;
+	border: 0;
+	border-bottom: 7px solid #45318f;
+	cursor: pointer;
+}
+/* TERMINEI TODO O RESTO */
