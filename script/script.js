@@ -15,7 +15,7 @@ slider.addEventListener('input', function () {
 	);
 	slider.style.background = `linear-gradient(
 		90deg,
-		rgb(183, 1, 255, 0.801) ${porcent}%,
+		rgb(183, 1, 255, 0.801) ${porcent-50}%, rgb(255,255,255) ${porcent}%,
 		rgba(79, 0, 143, 0.801) ${porcent}%
 	)`;
 
