@@ -51,8 +51,9 @@ const button = document.getElementById('press');
 
 button.addEventListener('click', function () {
 	button.style.borderBottom = '3px solid #45318f';
-	alert('Muito obrigado pela sua visita!')
 	setTimeout(function () {
 		button.style.borderBottom = '7px solid #45318f';
+	  alert('Muito obrigado pela sua visita!');
+
 	}, 90);
 });
