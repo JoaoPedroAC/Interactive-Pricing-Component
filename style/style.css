@@ -18,12 +18,12 @@ main {
 	width: 100%;
 	height: 100%;
 	background-color: rgb(44, 31, 92);
-	padding: 1% 0;
 }
 /* ESTAMOS EDITANDO O CABEÇALHO */
 .head-container {
 	position: relative;
-	max-height: 80vh;
+	max-width: 100vw;
+	max-height: 100vh;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -64,9 +64,9 @@ main {
 /* COMECEI A EDITAR O CORPO */
 .body-container {
 	max-width: 85vw;
-	max-height: 80vh;
+	max-height: 90vh;
 	width: 500px;
-	height: 381.6px - 1%;
+	height: 60%;
 	position: absolute;
 	top: 30%;
 	background-color: rgb(231, 230, 230);
@@ -146,8 +146,8 @@ main {
 
 /* INICIEI O CENTRO */
 .billing {
-	max-width: 95vw;
-	max-height: 95vh;
+	/* max-width: 95vw;
+	max-height: 95vh; */
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -266,8 +266,8 @@ label input:checked ~ span i::after {
 }
 /* COMECEI O FINAL */
 .final {
-	max-width: 90vw;
-	max-height: 90vh;
+	/* max-width: 90vw;
+	max-height: 90vh; */
 	width: 100%;
 	display: flex;
 	flex-direction: row;
