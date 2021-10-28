@@ -417,3 +417,22 @@ label input:checked ~ span i::after {
 		top: 22.9%;
 	}
 }
+@media screen and (max-width: 298px) {
+	.circle {
+		top: 3%;
+	}
+	
+	.head-container > h2 {
+		top: 7%;
+		font-size: 18px;
+	}
+	.head-container > p {
+		top: 13%;
+		font-size: 10px;
+	}
+	.body-container {
+		width: 500px;
+		height: 68%;
+		top: 22.9%;
+	}
+}
