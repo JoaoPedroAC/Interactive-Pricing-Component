@@ -33,6 +33,7 @@ slider.addEventListener('input', function () {
 const box = document.getElementById('checkBox');
 const ball = document.getElementById('ball');
 const downPrice = document.getElementById('pomotion');
+const area = document.getElementById('area');
 
 box.addEventListener('click', function () {
 	if (this.checked === false) {
@@ -48,9 +49,9 @@ box.addEventListener('click', function () {
 
 const button = document.getElementById('press');
 
-button.addEventListener('click', function(){
+button.addEventListener('click', function () {
 	button.style.borderBottom = '3px solid #45318f';
-	setTimeout(function(){
-	button.style.borderBottom = '7px solid #45318f';
-	},90)
-})
+	setTimeout(function () {
+		button.style.borderBottom = '7px solid #45318f';
+	}, 90);
+});
