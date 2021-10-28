@@ -22,4 +22,4 @@
 ![tablet](https://user-images.githubusercontent.com/78094903/139182419-ab9e40d9-9171-43e5-91ee-3495d46dd7d9.png)
 
 ## Conquista
-Comeicei de verdade a mexer com JavaScript na metade do mês 09/2021 e hoje (28/10/2021) consigo ver os frutos dos meus estudos, pois fiz interatividades que a pouco tempo nem sabia que conseguiria.
+Comeicei de verdade a mexer com JavaScript na metade do mês 09/2021 e hoje (28/10/2021) consigo ver os frutos dos meus estudos, pois fiz interatividades que a tempos atrás nem sabia que conseguiria.
